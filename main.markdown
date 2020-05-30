@@ -237,3 +237,55 @@ l'accelerazione sarà costante.
 Se il corpo ha carica positiva l'accelerazione ha direzione e verso uguali al
 campo elettrico. Se il corpo ha carica negativa la propria accelerazione sarà
 invece opposta in direzione e verso al campo elettrico.
+
+# La legge di Gauss
+
+La legge di Gauss fornisce un metodo calcolare il campo elettrostatico.
+Nonostante sia una diretta conseguenza della legge di Coulomb si rivela molto
+comoda quando la distribuzione di carica presenta un alto grado di simmetria.
+
+## Flusso
+
+Il flusso di un campo vettoriale attraverso una superficie orientata è
+l'integrale di superficie esteso su tutta la superficie del prodotto scalare del
+campo per il versore normale alla superficie.
+
+Il flusso è una grandezza scalare.
+
+Una qualunque superficie $S$ può essere orientata, almeno localmente,
+attribuendo ad ogni elemento infinitesimo $dS$ un versore $\hat{n}$ ad esso
+perpendicolare secondo la convenzione della mano destra.
+
+## Flusso elettrico
+
+Data una superficie $dS$ in una regione in cui è presente un campo $\vec{E}$,
+considerando il versore $\hat{u}$ normale alla superficie, si definisce il
+flusso del campo elettrico $\vec{E}$ attraverso la superficie $dS$:
+
+$$
+d \Phi(\vec{E}) = E \cdot \hat{u} \, dS
+\qquad \qquad
+\Phi(\vec{E}) = \int_S \vec{E} \cdot \hat{u} \, dS
+$$
+
+Se la superficie è chiusa, cioè se risulta impossibile passare dalla faccia
+esterna a quella interna se non attraverso di essa, è convenzione orientare la
+normale verso l'esterno della superficie. In tal caso si usa il simbolo di
+integrale su superficie chiusa:
+
+$$
+\Phi(\vec{E}) = \oint_S \vec{E} \cdot \hat{u} \, dS
+$$
+
+Si nota che i contributi positivi all'integrale si hanno per
+$\vec{E} \cdot \hat{u} > 0$, dovuti alle zone dove anche $\vec{E}$ punta verso
+l'esterno. Essi rappresentano un flusso di $\vec{E}$ uscente dalla superficie
+chiusa.
+
+I contributi negativi invece provengono dalle zone in cui
+$\vec{E} \cdot \hat{u} < 0$, in cui cioè $\vec{E}$ punta verso l'interno e
+rappresentano un flusso di $\vec{E}$ entrante nella superficie chiusa.
+
+Pertanto l'ultimo integrale indicato fornisce il flusso netto attraverso la
+superficie chiusa. Se è nullo allora il flusso entrante è uguale in modulo al
+flusso uscente.
