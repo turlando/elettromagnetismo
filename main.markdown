@@ -37,8 +37,8 @@ La configurazione degli elettroni è caratteristica del tipo di atomo.
 
 La configurazione di un atomo è descritta tramite:
 
-- Numero atomico ($Z$): indica il numero di protoni.
-- Numero di massa ($A$): somma del numero di protoni $Z$ e di neutroni $N$.
+- numero atomico ($Z$): indica il numero di protoni.
+- numero di massa ($A$): somma del numero di protoni $Z$ e di neutroni $N$.
 
 ## Principio di conservazione
 
@@ -170,3 +170,70 @@ di prova è diretta nel verso opposto a $q$. Si dice che il campo è uscente.
 
 Se la carica sorgente $q$ del campo è negativa, la forza esercitata sulla carica
 di prova è diretta verso $q$. Si dice che il campo è entrante.
+
+## Distribuzione continua
+
+Generalmente non si è interessati al campo elettrico locale che esiste in
+prossimità di ciascuna carica, che sarebbe difficile da calcolare per l'elevato
+numero di contributi, quanto piuttosto al campo elettrostatico medio nei punti
+distanti dalle cariche. Tale distanza può essere piccola da un punto di vista
+macroscopico, ma deve essere molto grande rispetto alla distanza media tra le
+cariche elementari, che è nell'ordine di $10^{-10} \mathrm{m}$.
+
+In tal caso si può considerare la distribuzione delle cariche come una
+distribuzione continua, suddividendo la carica in elementi infinitesimi $dq$,
+approssimabile a una carica puntiforme.
+
+$$
+d\vec{E} = k \, \frac{dq}{r^2} \, \hat{r}
+\qquad \qquad
+\vec{E} = k \int \frac{dq}{r^2} \, \hat{r}
+$$
+
+$\hat{u}$ è il versore della direzione orientata che va da $dq$ a $P$.
+
+Quando la carica è distribuita uniformemente su una superficie con alto grado di
+simmetria la soluzione dell'integrale è banale e si possono introdurre alcune
+notazioni:
+
+- densità lineare: $\lambda = Q/l$, $dq = \lambda \, dl$
+- densità superficiale: $\sigma = Q/A$, $dq = \sigma \, dA$
+- densità volumetrica: $\varrho = Q/V$, $dq = \varrho \, dV$
+
+## Linee di forza
+
+Le linee di forza sono un metodo per descrivere graficamente un campo elettrico
+introdotto da Faraday.
+
+- una linea di forza in ogni proprio punto è tangente e concorde al campo
+  elettrico in quel punto
+- le linee di forza si addensano dove l'intensità del campo elettrostatico è
+  maggiore
+- le linee di forza non si incrociano mai
+- le linee di forza hanno origine dalle cariche positive e terminano nelle
+  cariche negative; qualora ci siano solo cariche dello stesso segno le linee
+  di forza si chiudono all'infinito
+
+Un campo elettrostatico uniforme è rappresentato da linee parallele, che
+indicano la costanza di direzione e verso, ed equidistanti, che indicano la
+costanza del modulo.
+
+## Moto di una carica
+
+Una carica $q$ esposta a un campo $\vec{E}$ subisce una forza $\vec{F}$ e quindi
+secondo la prima legge di Newton viene portata a una certa accelerazione
+$\vec{a}$.
+
+$$
+\vec{F} = q \, \vec{E} = m \, \vec{a}
+\qquad \qquad
+\vec{a} = \frac{\vec{F}}{m} = \frac{q \, \vec{E}}{m}
+$$
+
+Se il campo elettrico è uniforme, quindi è costante in modulo, direzione e
+verso, e la carica è libera di muoversi, allora la forza sarà costante e anche
+l'accelerazione sarà costante.
+
+Se il corpo ha carica positiva l'accelerazione ha direzione e verso uguali al
+campo elettrico. Se il corpo ha carica negativa la propria accelerazione sarà
+invece opposta in direzione e verso al campo elettrico.
