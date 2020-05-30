@@ -115,3 +115,12 @@ $\hat{r}_{12}$ è un versore diretto da $q_1$ verso $q_2$.
 Dalla terza legge di Newton si evince che la forza elettrica esercitata da $q_1$
 su $q_2$ è uguale in modulo alla forza elettrica esercitata da $q_2$ su $q_1$ e
 tali forze differiscono soltanto per il verso.
+
+Se $q_1$ e $q_2$ hanno lo stesso segno la forza esercitata su $q_2$ da $q_1$
+spinge $q_2$ via da $q_1$. Se invece hanno segni opposti la forza su $q_2$ è
+rivolta verso $q_1$.
+
+La forza elettrica esercitata su una carica $q$ dovuta a diverse cariche poste
+nello spazio circostante è la somma vettoriale delle forze esercitate
+singolarmente da ogni carica sulla carica $q$. Vige quindi il principio di
+sovrapposizione degli effetti o principio di indipendenza delle forze simultanee.
