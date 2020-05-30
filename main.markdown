@@ -124,3 +124,49 @@ La forza elettrica esercitata su una carica $q$ dovuta a diverse cariche poste
 nello spazio circostante è la somma vettoriale delle forze esercitate
 singolarmente da ogni carica sulla carica $q$. Vige quindi il principio di
 sovrapposizione degli effetti o principio di indipendenza delle forze simultanee.
+
+# Campo elettrostatico
+
+La forza elettrica è una forza a distanza e può quindi produrre effetti senza
+che avvenga un contatto fisico tra i corpi che interagiscono.
+
+L'interazione elettrica tra due corpi è un processo che richiede due passi: una
+carica sorgente stabilisce un campo; una seconda carica interagisce con il campo
+e subisce una forza.
+
+Il campo è il mezzo che consente a un corpo di esercitare una forza su un altro
+corpo a distanza. Il concetto di campo fu sviluppato da Michael Faraday nel
+1800.
+
+Un campo elettrostatico può essere rilevato posizionando una carica di prova
+$q_0$ nel campo e misurando la forza elettrica esercitata su di essa.
+
+Il campo elettrostatico prodotto in un punto $P$ da un sistema di cariche ferme
+è definito come la forza elettrostatica risultante $F$ che agisce su una carica
+di prova $q_0$ posta in P divisa per la carica $q_0$ stessa.
+
+$$
+\vec{E}
+= \frac{\vec{F}}{q_0}
+= \sum_i k \, \frac{q_i}{r^2} \, \hat{u}_i
+\qquad \qquad
+\vec{E}
+= \frac{\vec{F}}{q_0}
+= k \, \frac{q_1}{r^2} \, \hat{u}_1
+$$
+
+La carica $q_0$ può provocare delle perturbazioni del sistema causando per
+esempio spostamenti delle cariche. Da un punto di vista teorico la definizione
+di campo sarebbe più precisa se si facesse tendere a zero il valore di $q_0$.
+Da un punto di vista pratico $q_0$ deve essere molto piccola rispetto a tutte le
+altre cariche.
+
+$$
+\vec{E} = \lim_{q_0 \to 0} \frac{\vec{F}}{q_0}
+$$
+
+Se la carica sorgente $q$ del campo è positiva, la forza esercitata sulla carica
+di prova è diretta nel verso opposto a $q$. Si dice che il campo è uscente.
+
+Se la carica sorgente $q$ del campo è negativa, la forza esercitata sulla carica
+di prova è diretta verso $q$. Si dice che il campo è entrante.
