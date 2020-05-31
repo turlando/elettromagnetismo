@@ -146,13 +146,11 @@ Il campo elettrostatico prodotto in un punto $P$ da un sistema di cariche ferme
 di prova $q_0$ posta in P divisa per la carica $q_0$ stessa.
 
 $$
-\vec{E}
-= \frac{\vec{F}}{q_0}
-= \sum_i k \, \frac{q_i}{r^2} \, \hat{u}_i
+\vec{E} = \frac{\vec{F}}{q_0}
+        = \sum_i k \, \frac{q_i}{r^2} \, \hat{u}_i
 \qquad \qquad
-\vec{E}
-= \frac{\vec{F}}{q_0}
-= k \, \frac{q_1}{r^2} \, \hat{u}_1
+\vec{E} = \frac{\vec{F}}{q_0}
+        = k \, \frac{q_1}{r^2} \, \hat{u}_1
 $$
 
 La carica $q_0$ può provocare delle perturbazioni del sistema causando per
@@ -289,3 +287,44 @@ rappresentano un flusso di $\vec{E}$ entrante nella superficie chiusa.
 Pertanto l'ultimo integrale indicato fornisce il flusso netto attraverso la
 superficie chiusa. Se è nullo allora il flusso entrante è uguale in modulo al
 flusso uscente.
+
+## La legge di Gauss
+
+La legge di Gauss stabilisce una relazione tra il flusso elettrico netto
+attraverso una superficie chiusa e le cariche racchiuse all'interno di essa.
+
+Si consideri una superficie sferica $A$ di raggio $r$, la cui superficie è pari
+a $4 \pi r^2$. Al centro di tale sfera è posta internamente una carica $q$.
+
+Per la simmetria sferica il campo $\vec{E}$ è sempre perpendicolare a ogni
+porzione infinitesima di superficie $dA$. Consideriamo inoltre il campo
+$\vec{E}$ costante.
+
+$$
+\Phi(\vec{E}) = \oint_S \vec{E} \cdot d \vec{A}
+              = \oint E \, dA
+              = E \oint dA
+              = E \, 4 \pi r^2
+              = \frac{1}{4 \pi \varepsilon_0} \frac{q}{r^2} \, 4 \pi r^2
+              = \frac{q}{\varepsilon_0}
+$$
+
+Il flusso netto attraverso la superficie è proporzionale alla carica presente
+all'interno della superficie ed è indipendente dal raggio $r$ della sfera.
+
+Se si considera una superficie non sferica $S_1$ che circoscrive la superficie
+sferica $S$ si nota che il numero di linee di forza che attraversano $S$ è
+uguale al numero di linee di forza  che attraversano $S_1$.
+
+Il valore del flusso netto attraverso una qualunque superficie chiusa che
+contiene una carica $q$ all'interno è pari a $q / \varepsilon_0$ e non dipende
+dalla forma della superficie.
+
+Se si considera una particella posizionata all'infuori di una superficie chiusa
+si nota che il numero di linee di forza che entrano nella superficie sono uguali
+a quelle uscenti. Perciò il campo elettrico attraverso una superficie chiusa
+senza alcuna carica all'interno è pari a zero.
+
+Se la distribuzione di carica in esame non ha una sufficiente simmetria la legge
+di Gauss è comunque valida, tuttavia non sarà utile per determinare il campo
+elettrico per tale distribuzione di carica.
