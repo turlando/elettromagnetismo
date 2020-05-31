@@ -328,3 +328,160 @@ senza alcuna carica all'interno è pari a zero.
 Se la distribuzione di carica in esame non ha una sufficiente simmetria la legge
 di Gauss è comunque valida, tuttavia non sarà utile per determinare il campo
 elettrico per tale distribuzione di carica.
+
+# Energia potenziale
+
+La forza di Coulomb è conservativa e infatti essa è centrale, non saturabile e
+con rotore nullo.
+
+Il sistema formato da un campo e una carica su cui agisce una forza causata da
+tale campo come un sistema chiuso. Il lavoro che il campo esercita sulla carica
+è interno al sistema.
+
+La forza $\vec{F}$ esercitata da un campo $\vec{E}$ su una carica $q$ si
+esprime come $\vec{F} = q \vec{E}$. Il lavoro di tale forza che causa uno
+spostamento infinitesimo $d \vec{s}$ della carica $q$ è pari a
+$W = \vec{F} \cdot d \vec{s} = q \vec{E} \cdot d \vec{s}$.
+
+Il lavoro $W$ effettuato in un sistema chiuso da una forza conservativa è pari
+all'opposto della differenza di energia potenziale $\Delta U$. Quindi
+$W = - \Delta U$.
+
+Per uno spostamento finito di una carica $q$ da un punto $A$ a un punto $B$ si
+verifica:
+
+$$
+dU = -q \vec{E} \cdot d \vec{s}
+\qquad \qquad
+\Delta U = - q \int_A^B \vec{E} \cdot d \vec{s}
+$$
+
+Poiché la forza $\vec{F}$ è conservativa l'integrale di linea non dipende dal
+percorso.
+
+L'energia potenziale è una caratteristica del sistema composto da un campo e
+dalle cariche su cui agisce.
+
+## Potenziale elettrostatico
+
+Il potenziale è una caratteristica del campo e non dipende dalle cariche
+sulle quali agisce.
+
+Il potenziale è la misura dell'energia potenziale per unità di carica e si
+ricava dividendo l'energia potenziale per la carica sottoposta al lavoro.
+
+Come l'energia potenziale anche il potenziale è una grandezza scalare, la cui
+unità di misura è il Volt ($\mathrm{V}$).
+$1 \mathrm{V} = 1 \mathrm{J} / \mathrm{C}$.
+
+## Differenza di potenziale
+
+La differenza di potenziale $\Delta V$ tra due punti $A$ e $B$ in un campo
+elettrico si esprime come la variazione di energie potenziale nel sistema quando
+una carica $q$ si sposta tra i due punti, diviso la carica stessa.
+
+$$
+\Delta V = \frac{\Delta U}{q}
+         = - \int_A^B \vec{E} \cdot d \vec{s}
+$$
+
+Sia per l'energia potenziale e sia per la differenza di potenziale ha
+significato considerare soltanto la differenza tra le misure. Per comodità si
+considera come zero un certo punto del campo elettrostatico.
+
+Si consideri un agente esterno al sistema che sposta una carica all'interno del
+campo elettrostatico. Se tale agente sposta la carica dal punto $A$ al punto $B$
+senza cambiare l'energia cinetica della carica allora l'agente effettua un
+lavoro che cambia l'energia potenziale del sistema.
+
+Il lavoro W effettuato da un agente esterno che sposta una carica $q$ su un
+campo elettrostatico a velocità costante si esprime come $W = q \Delta V$
+
+Il campo elettrico misura la velocità con cui cambia il potenziale elettrico
+in relazione allo spazio.
+
+## Differenza di potenziale in un campo uniforme
+
+Si consideri un campo elettrostatico uniforme $\vec{E}$. Si vuole calcolare la
+differenza di potenziale tra due punti $A$ e $B$ posti a una distanza $d$ e il
+cui vettore spostamento $\vec{s}$ è parallelo alle linee di campo. In tal caso:
+
+$$
+\Delta V = - \int_A^B \vec{E} \cdot d \vec{s}
+         = - \int_A^B E \, ds \, \cos 0
+         = - \int_A^B E \, ds
+         = - E \int_A^B ds
+         = - E d
+$$
+
+In un sistema formato da un campo elettrostatico e una carica positiva,
+l'energia potenziale elettrostatica del sistema diminuisce quando la carica si
+muove in direzione del campo. Se una carica è rilasciata da uno stato di quiete
+in tale campo elettrostatico, essa subirà una forza $q \vec{E}$ diretta verso
+$\vec{E}$. Di conseguenza la carica accelera acquisendo energia cinetica.
+
+In un sistema formato da un campo elettrostatico e una carica negativa,
+l'energia potenziale elettrostatica del sistema aumenta quando la carica si
+muove in direzione del campo. Se una carica è rilasciata da uno stato di quiete
+in tale campo elettrostatico, essa subirà una forza $q \vec{E}$ diretta in verso
+opposto a $\vec{E}$. Per poter spostare la carica nella direzione del campo
+$\vec{E}$ è necessario che un agente esterno applichi una forza e svolga un
+lavoro positivo sulla carica.
+
+## Superficie equipotenziale
+
+Una superficie equipotenziale è una superficie che consiste in una distribuzione
+continua di punti aventi tutti lo stesso potenziale elettrico.
+
+Le superfici equipotenziali associate a un campo elettrico uniforme consistono in
+una famiglia di piani paralleli tutti perpendicolari al campo.
+
+## Potenziale dovuto a cariche puntiformi
+
+Si vuole individuare il potenziale elettrico in un certo punto a distanza $r$ da
+una carica puntiforme $q$.
+
+La differenza di potenziale si può esprimere come l'opposto dell'integrale del
+campo sullo spostamento tra due punti $A$ e $B$ scelti arbitrariamente. In
+qualunque punto dello spazio il campo elettrostatico è orientato in modo radiale
+e uscente alla carica $q$.
+
+$$
+V_B - V_A = - \int_A^B \vec{E} \cdot d \vec{s}
+\qquad \qquad
+\vec{E} \cdot d \vec{s} = k \, \frac{q}{r^2} \, \hat{r} \cdot d \vec{s}
+$$
+
+Poiché il modulo di $\hat{r}$ è unitario, il prodotto scalare
+$\hat{r} \cdot d \vec{s} = ds \cos \theta$ dove $\theta$ è l'angolo tra
+$\hat{r}$ e $d \vec{s}$.
+
+Quindi $ds \cos \theta$ è la proiezione di $d \vec{s}$ su $\hat{r}$. Di
+conseguenza $ds \cos \theta = dr$.
+
+Qualunque spostamento infinitesimo $d \vec{s}$ sul percorso tra $A$ e $B$ causa
+una variazione infinitesima $dr$ su $\vec{r}$.
+
+Si può quindi dire che:
+
+$$
+V_B - V_A = - k q \int_A^B \frac{dr}{r^2}
+          = k \left[ \frac{q}{r} \right]_{r_A}^{r_b}
+          = k q \left[ \frac{1}{r_B} - \frac{1}{r_A} \right]
+$$
+
+Il valore dell'integrale non dipende dal percorso tra $A$ e $B$. Questo dimostra
+che la forza elettrostatica è conservativa. Il campo associato a una forza
+conservativa è a sua volta un campo conservativo.
+
+Si evince che la differenza di potenziale tra due punti $A$ e $B$ qualunque in
+un campo creato da una carica puntiforme dipende soltanto dalla distanza dei
+punti dalla carica.
+
+È convenzione porre il punto $A$ con potenziale nullo a una distanza infinita.
+In tal caso il potenziale elettrico dovuto a una carica puntiforme posta a una
+distanza $r$ qualunque è:
+
+$$
+V = k \frac{q}{r}
+$$
