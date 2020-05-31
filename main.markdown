@@ -439,12 +439,11 @@ una famiglia di piani paralleli tutti perpendicolari al campo.
 ## Potenziale dovuto a cariche puntiformi
 
 Si vuole individuare il potenziale elettrico in un certo punto a distanza $r$ da
-una carica puntiforme $q$.
+una carica puntiforme $q$. In qualunque punto dello spazio il campo
+elettrostatico è orientato in modo radiale e uscente alla carica $q$.
 
-La differenza di potenziale si può esprimere come l'opposto dell'integrale del
-campo sullo spostamento tra due punti $A$ e $B$ scelti arbitrariamente. In
-qualunque punto dello spazio il campo elettrostatico è orientato in modo radiale
-e uscente alla carica $q$.
+Si consideri la differenza di potenziale tra due punti $A$ e $B$ scelti
+arbitrariamente.
 
 $$
 V_B - V_A = - \int_A^B \vec{E} \cdot d \vec{s}
@@ -452,12 +451,10 @@ V_B - V_A = - \int_A^B \vec{E} \cdot d \vec{s}
 \vec{E} \cdot d \vec{s} = k \, \frac{q}{r^2} \, \hat{r} \cdot d \vec{s}
 $$
 
-Poiché il modulo di $\hat{r}$ è unitario, il prodotto scalare
+Poiché il modulo di $\hat{r}$ è unitario,
 $\hat{r} \cdot d \vec{s} = ds \cos \theta$ dove $\theta$ è l'angolo tra
-$\hat{r}$ e $d \vec{s}$.
-
-Quindi $ds \cos \theta$ è la proiezione di $d \vec{s}$ su $\hat{r}$. Di
-conseguenza $ds \cos \theta = dr$.
+$\hat{r}$ e $d \vec{s}$. Quindi $ds \cos \theta$ è la proiezione di $d \vec{s}$ su
+$\hat{r}$. Di conseguenza $ds \cos \theta = dr$.
 
 Qualunque spostamento infinitesimo $d \vec{s}$ sul percorso tra $A$ e $B$ causa
 una variazione infinitesima $dr$ su $\vec{r}$.
