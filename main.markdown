@@ -463,7 +463,7 @@ Si può quindi dire che:
 
 $$
 V_B - V_A = - k q \int_A^B \frac{dr}{r^2}
-          = k \left[ \frac{q}{r} \right]_{r_A}^{r_b}
+          = k q \left[ \frac{1}{r} \right]_{r_A}^{r_b}
           = k q \left[ \frac{1}{r_B} - \frac{1}{r_A} \right]
 $$
 
@@ -567,3 +567,131 @@ La capacità equivalente di $n$ condensatori collegati in **parallelo** è:
 $$
 C_{eq} = \sum_{i = 1}^n C_i
 $$
+
+# Corrente elettrica
+
+Lo studio condotto finora ha riguardato cariche elettrostatiche, cioè fisse
+all'interno del sistema. Adesso ci si accinge a studiare l'elettrodinamica,
+che riguarda cariche in movimento.
+
+Le cariche elettriche possono spostarsi all'interno di un materiale. Tale flusso
+dipende dalle proprietà del materiale e dalla differenza di potenziale della
+regione di spazio in cui le cariche si muovono.
+
+Ogniqualvolta si manifesta un flusso di cariche attraverso una regione allora
+esiste una corrente.
+
+La corrente è la velocità con cui le cariche si spostano attraverso una
+superficie. Si definiscono la corrente media e la corrente istantanea come
+segue:
+
+$$
+I_m = \frac{\Delta Q}{\Delta t}
+\qquad \qquad
+I = \frac{dQ}{dt}
+$$
+
+L'unità di misura della corrente elettrica è l'ampere ($\mathrm{A}$).
+$1 \mathrm{A} = 1 \mathrm{C} / \mathrm{s}$.
+
+È convenzione assegnare alla corrente elettrica la stessa direzione del moto
+delle cariche positive. Di conseguenza la direzione della corrente è opposta
+al verso di spostamento degli elettroni.
+
+## Modello microscopico
+
+Si consideri un conduttore cilindrico di sezione $A$ e di lunghezza $d$, il cui
+volume è quindi $A d$. Sia $n$ il numero di cariche in movimento per unità di
+volume, cioè la densità di cariche libere. Allora il numero di cariche nel
+volume considerato è $n A d$. Quindi la carica totale è $\Delta Q = n A d q$.
+
+Le cariche libere si muovono con una velocità di deriva $\vec{v}_d$ che indica
+la velocità media di tutte le particelle in movimento. Infatti gli elettroni
+collidono continuamente con gli atomi del conduttore, mutando sia il modulo che
+la direzione della propria velocità.
+
+Se le cariche si muovono con una certa velocità $\vec{v}_d$ parallela all'asse
+del cilindro, il modulo dello spostamento in un certo intervallo $\Delta t$ è
+$\vec{v}_d \Delta t$.
+
+Se si considera $\Delta t$ come l'intervallo di tempo necessario per spostare
+tutti gli elettroni liberi di una certa distanza $d$ allora si può esprimere la
+carica totale di $n$ cariche puntiformi che si muovono a una certa velocità
+$\vec{v}_d$ in un conduttore cilindrico di sezione $A$ e di lunghezza $d$ in
+funzione del tempo. Dividendo tale quantità per il tempo si ottiene l'intensità
+di corrente media nel conduttore.
+
+$$
+\Delta Q = n A v_d \Delta t q
+\qquad \qquad
+I_m = \frac{\Delta Q}{\Delta t} = n q v_d A
+$$
+
+## Densità di corrente
+
+Dato un conduttore di sezione $A$ con una corrente $I$ si definisce la densità
+di corrente $J$ come la corrente per unità di area.  L'unità di misura della
+densità di corrente è $\mathrm{A} / \mathrm{m^2}$.
+
+$$
+I = n q v_d A
+\qquad \qquad
+J = \frac{I}{A} = n q v_d
+$$
+
+Tale espressione è valida solo se la densità di corrente è uniforme e se la
+superficie della sezione è perpendicolare alla direzione della corrente.
+
+## Conduttività
+
+In alcuni materiali la densità di corrente è proporzionale al campo elettrico.
+Il rapporto tra la densità di corrente e il campo elettrico si chiama
+conduttività $\sigma$ ed è indipendente dal campo elettrico che causa la
+corrente.
+
+$$
+J = \sigma E
+$$
+
+I materiali che rispettano tale relazione sono chiamati **ohmici** e quelli che
+non la rispettano sono detti **non ohmici**.
+
+## Resistenza
+
+Si consideri un conduttore cilindrico di sezione $A$ e lunghezza $d$ ai cui capi
+è applicata una differenza di potenziale $\Delta V$ e in cui è quindi presente
+un campo elettrico uniforme.
+
+$$
+\Delta V = E d
+\qquad \qquad
+E = \frac{\Delta V}{d}
+$$
+
+$$
+J = \sigma E = \sigma \frac{\Delta V}{d}
+\qquad \qquad
+\Delta V = J \frac{d}{\sigma}
+$$
+
+$$
+J = \frac{I}{A}
+\qquad \qquad
+\Delta V = J \frac{d}{\sigma}
+         = \frac{I}{A} \frac{d}{\sigma}
+$$
+
+$$
+R = \frac{d}{\sigma A}
+\qquad \qquad
+\Delta V = \frac{I}{A} \frac{d}{\sigma}
+         = R I
+\qquad \qquad
+R = \frac{\Delta V}{I}
+$$
+
+$R$ è la resistenza del conduttore, la cui unità di misura è l'ohm
+($\mathrm{\Omega}$). $1 \mathrm{\Omega} = 1 \mathrm{V} / \mathrm{A}$.
+
+Se la differenza di potenziale di $1 \mathrm{V}$ causa una corrente di
+$1 \mathrm{A}$ allora la resistenza del conduttore è di $1 \mathrm{\Omega}$.
