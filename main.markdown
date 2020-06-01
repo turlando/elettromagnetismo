@@ -653,8 +653,8 @@ $$
 J = \sigma E
 $$
 
-I materiali che rispettano tale relazione sono chiamati **ohmici** e quelli che
-non la rispettano sono detti **non ohmici**.
+I materiali che rispettano tale relazione, chiamata **legge di Ohm** sono
+chiamati **ohmici** e quelli che non la rispettano sono detti **non ohmici**.
 
 ## Resistenza
 
@@ -695,3 +695,15 @@ $R$ è la resistenza del conduttore, la cui unità di misura è l'ohm
 
 Se la differenza di potenziale di $1 \mathrm{V}$ causa una corrente di
 $1 \mathrm{A}$ allora la resistenza del conduttore è di $1 \mathrm{\Omega}$.
+
+## Resistività
+
+Si definisce resistività l'inverso della conducibilità.
+
+$$
+R = \frac{d}{\sigma A}
+\qquad \qquad
+\varrho = \frac{1}{\sigma}
+\qquad \qquad
+R = \varrho \frac{d}{A}
+$$
