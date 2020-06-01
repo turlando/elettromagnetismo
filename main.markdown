@@ -550,3 +550,20 @@ $$
 
 La capacità di un condensatore piano è proporzionale alla superficie dei
 conduttori e inversamente proporzionale alla loro distanza.
+
+## Combinazione di condensatori
+
+Due o più condensatori possono essere composti in circuiti elettrici ed è
+possibile calcolarne la propria capacità equivalente.
+
+La capacità equivalente di $n$ condensatori collegati in **serie** è:
+
+$$
+\frac{1}{C_{eq}} = \sum_{i = 1}^n \frac{1}{C_i}
+$$
+
+La capacità equivalente di $n$ condensatori collegati in **parallelo** è:
+
+$$
+C_{eq} = \sum_{i = 1}^n C_i
+$$
