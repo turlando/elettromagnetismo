@@ -482,3 +482,71 @@ distanza $r$ qualunque è:
 $$
 V = k \frac{q}{r}
 $$
+
+# Capacità
+
+Un condensatore è un sistema costituito da due conduttori paralleli di uguale
+superficie posti a una certa distanza e separati da un dielettrico. Ciascun
+conduttore ha una carica uguale in modulo ma di segno opposto. Tra i due
+conduttori esiste quindi una certa differenza di potenziale.
+
+La capacità di un condensatore è il rapporto tra il modulo della carica presente
+su ciascun conduttore e la differenza di potenziale presente tra i due
+conduttori.
+
+$$
+C = \frac{Q}{\Delta V}
+$$
+
+La capacità è una quantità sempre positiva e la propria unità di misura è il
+Farad ($\mathrm{F}$). $1 \mathrm{F} = 1 \mathrm{C} / \mathrm{V}$.
+
+## Capacità di una sfera
+
+Nonostante non sia una situazione comune, anche un singolo conduttore ha una
+capacità.
+
+Si immagini una sfera carica. Le linee di forza nel caso in cui la sfera sia
+isolata sono le stesse del caso in cui ci fosse una seconda sfera concentrica
+di raggio infinito con medesima carica ma segno opposto.
+
+Anche questo sistema consiste in un condensatore.
+
+Ricordando che il potenziale elettrico di una sfera di raggio $r$ è
+$V = k Q / r$, si consideri che il potenziale sia nullo nella sfera esterna
+posta a una distanza infinita.
+
+$$
+C = \frac{Q}{\Delta V} = \frac{Q}{k Q / r} = \frac{r}{k} = 4 \pi \varepsilon_0 r
+$$
+
+Si è dimostrato che la capacità di una sfera isolata è proporzionale al proprio
+raggio e indipendente dalle cariche presenti sulla sfera e dal proprio
+potenziale.
+
+La capacità dipende solo dalla geometria del corpo.
+
+## Condensatore piano
+
+Si considerino due conduttori piani con superficie $A$ separati da una distanza
+$d$. Un conduttuttore ha una carica $+Q$ e l'altro una carica $-Q$.
+
+La densità superficiale di carica di ciascun conduttore è $\sigma = Q / A$. Se
+consideriamo i due conduttori essere posti a una distanza molto ravvicinata si
+può considerare il campo elettrico come uniforme tra i due conduttori e nullo in
+ogni altro punto dello spazio.
+
+$$
+E = \frac{\sigma}{\varepsilon_0}
+  = \frac{Q}{\varepsilon_0 A}
+\qquad \qquad
+\Delta V = E d
+         = \frac{Q d}{\varepsilon_0 A}
+\qquad \qquad
+C = \frac{Q}{\Delta V}
+  = \frac{Q}{Q d / \varepsilon_0 A}
+  = \frac{\varepsilon_0 A}{d}
+$$
+
+La capacità di un condensatore piano è proporzionale alla superficie dei
+conduttori e inversamente proporzionale alla loro distanza.
