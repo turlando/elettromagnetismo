@@ -794,3 +794,28 @@ la carica non si può né creare né distruggere.
 La seconda legge si basa sul principio di conservazione dell'energia in un
 sistema isolato. Una carica che si sposta da un certo punto e ritorna al
 medesimo punto deve mantenere costante la propria energia.
+
+## Amperometro
+
+L'amperometro è uno strumento per la misura dell'intensità della corrente
+elettrica.
+
+L'amperometro ideale è un bipolo la cui resistenza è nulla. Di conseguenza la
+presenza di un amperometro ideale in serie a qualsiasi ramo del circuito non
+altera in alcun modo le caratteristiche del circuito medesimo. Esso si comporta
+come un cortocircuito.
+
+## Voltmetro
+
+Il voltmetro è uno strumento per la misura della differenza di potenziale
+elettrico tra due punti di un circuito.
+
+Il voltmetro ideale è un bipolo la cui resistenza è infinita ed equivale quindi
+ad un circuito aperto. Avendo resistenza infinita, esso non altera in alcun modo
+le proprietà del circuito medesimo. Esso va usato in parallelo alla sezione di
+circuito di cui si vuole misurare la tensione.
+
+## Circuiti RC
+
+Un circuito RC è un circuito contenente una combinazione in serie di resistori e
+condensatori.
