@@ -37,8 +37,8 @@ La configurazione degli elettroni è caratteristica del tipo di atomo.
 
 La configurazione di un atomo è descritta tramite:
 
-- numero atomico ($Z$): indica il numero di protoni.
-- numero di massa ($A$): somma del numero di protoni $Z$ e di neutroni $N$.
+- numero atomico ($Z$): indica il numero di protoni
+- numero di massa ($A$): somma del numero di protoni $Z$ e di neutroni $N$
 
 ## Principio di conservazione
 
@@ -819,3 +819,95 @@ circuito di cui si vuole misurare la tensione.
 
 Un circuito RC è un circuito contenente una combinazione in serie di resistori e
 condensatori.
+
+# Magnetismo
+
+Un campo magnetico $\vec{B}$ può essere generato o da cariche elettriche in
+movimento o da materiali che presentano proprietà magnetiche.
+
+Come per il campo elettrico, anche il campo magnetico può essere rappresentato
+graficamente mediante le linee di forza.
+
+## Forza magnetica
+
+La presenza di un campo magnetico $\vec{B}$ può essere determinata misurando la
+forza magnetica $\vec{F}$ esercitata su una carica di prova $q$.
+
+La forza magnetica presenta le seguenti simiglianze con la forza elettrica:
+
+- La forza magnetica è proporzionale alla carica
+- La forza magnetica su una carica negativa ha direzione opposta alla forza su
+  una carica positiva che si muove nella stessa direzione
+- La forza magnetica è proporzionale al modulo del campo magnetico
+
+La forza magnetica presenta anche delle proprietà che sono totalmente differenti
+alla forza elettrica:
+
+- La forza magnetica è proporzionale alla velocità della carica
+- La forza magnetica è proporzionale al seno dell'angolo presente tra il vettore
+  velocità e il campo magnetico
+- La forza magnetica per una carica che si muove parallelamente al campo
+  magnetico è nulla
+- La forza magnetica è perpendicolare al piano formato dal vettore velocità e
+  dal campo magnetico
+
+Tale descrizione della forza magnetica si riassume nella formula:
+
+$$
+\vec{F} = q \, \vec{v} \times \vec{B}
+$$
+
+È importante notare le seguenti differenze tra il modello della carica di prova
+applicato per il campo magnetico e per il campo elettrico:
+
+- Il vettore della forza elettrica ha la stessa direzione del campo elettrico.
+  Il vettore della forza magnetica è perpendicolare al campo magnetico.
+- La forza elettrica agisce su una particella carica a prescindere dal proprio
+  stato di quiete o di moto. La forza magnetica agisce solo su una carica solo
+  quando è in movimento.
+- La forza elettrica compie lavoro quando sposta una particella carica. La forza
+  magnetica di un campo magnetico costante non compie lavoro quando sposta una
+  carica in quanto la forza è perpendicolare allo spostamento.
+
+Dall'ultimo punto segue che l'energia cinetica o la velocità di una carica in
+movimento non può essere cambiata dal campo magnetico, che può solo modificarne
+la direzione.
+
+L'unità di misura del campo magnetico è il tesla ($\mathrm{T}$).
+$1 \mathrm{T} = 1 \mathrm{N} / (\mathrm{C} \, \mathrm{m} / \mathrm{s})$.
+
+## Forza magnetica su un conduttore con corrente
+
+Si consideri un conduttore cilindrico di lunghezza $L$ e sezione $A$ con una
+corrente $I$ sottoposto a un campo magnetico uniforme $\vec{B}$.
+
+Il campo magnetico esercita su una carica $q$ in movimento all'interno del
+conduttore con una velocità $\vec{v}$ una forza pari a
+$q \, \vec{v} \times \vec{B}$.
+
+Per determinare la forza esercitata sul conduttore si deve moltiplicare la forza
+applicata a una singola carica per il numero totale di cariche presenti nel
+conduttore. Sia $AL$ il volume del conduttore e sia $n$ il numero di cariche per
+unità di volume. Ne segue che la forza totale è pari a
+$q \, \vec{v} \times \vec{B} \, n \, AL$.
+
+$$
+I = n q v A
+\qquad \qquad
+F = I \, \vec{L} \times \vec{B}
+$$
+
+$\vec{L}$ è un vettore che ha la stessa direzione e lo stesso verso della
+corrente $I$ e modulo pari a $L$.
+
+Tale relazione vale solo per un conduttore dritto esposto a un campo magnetico
+uniforme.
+
+Considerando un conduttore cilindrico di forma arbitraria che si estende su una
+ascissa curvilinea $s$ la relazione diventa:
+
+$$
+d \vec{F} = I \, d \vec{s} \times \vec{B}
+\qquad \qquad
+\vec{F} = I \int_a^b d \vec{s} \times \vec{B}
+$$
