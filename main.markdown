@@ -762,3 +762,35 @@ $$
 
 Il processo per cui l'energia potenziale è trasformata in energia interna in un
 resistore si chiama **effetto joule**.
+
+# Circuiti a corrente continua
+
+Un circuito elettrico è un insieme di componenti elettrici e dei loro
+collegamenti interconnessi in un percorso chiuso in modo che la corrente
+elettrica possa fluire con continuità.
+
+## Forza elettromotrice
+
+Una batteria è una sorgente di forza elettromotrice $\mathcal{E}$. Si evidenzia
+che, nonostante il nome, la forza elettromotrice non è una forza ma una
+differenza di potenziale e si esprime quindi in volt.
+
+La forza elettromotrice $\mathcal{E}$ di una batteria è la massima differenza di
+potenziale che la batteria può fornire tra i propri terminali.
+
+## Leggi di Kirchhoff
+
+Le leggi di Kirchhoff permettono l'analisi circuiti complessi.
+
+1. **Legge di Kirchhoff delle correnti (KCL)**: la somma algebrica delle
+   correnti che attraversano un nodo è nulla.
+2. **Legge di Kirchhoff delle tensioni (KVL)**: la somma algebrica delle
+    tensioni lungo una linea chiusa è nulla.
+
+La prima legge si basa sul principio di conservazione della carica. Qualunque
+carica che entra in un certo punto del circuito deve per forza uscire in quanto
+la carica non si può né creare né distruggere.
+
+La seconda legge si basa sul principio di conservazione dell'energia in un
+sistema isolato. Una carica che si sposta da un certo punto e ritorna al
+medesimo punto deve mantenere costante la propria energia.
