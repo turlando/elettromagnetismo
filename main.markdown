@@ -707,3 +707,58 @@ R = \frac{d}{\sigma A}
 \qquad \qquad
 R = \varrho \frac{d}{A}
 $$
+
+## Combinazione di resistori
+
+Due o più resistori possono essere composti in circuiti elettrici ed è
+possibile calcolarne la propria resistenza equivalente.
+
+La resistenza equivalente di $n$ resistori collegati in **serie** è:
+
+$$
+R_{eq} = \sum_{i = 1}^n R_i
+$$
+
+La resistenza equivalente di $n$ resistori collegati in **parallelo** è:
+
+$$
+\frac{1}{R_{eq}} = \sum_{i = 1}^n \frac{1}{R_i}
+$$
+
+## Potenza
+
+Si consideri un circuito in cui è presente una batteria. Quando le cariche si
+spostano all'interno del circuito l'energia potenziale del sistema incrementa di
+una certa quantità $Q \Delta V$ e l'energia potenziale chimica della batteria
+diminuisce della medesima quantità, poiché $\Delta V = Q / \Delta U$ e
+$\Delta U = Q \Delta V$.
+
+Se nel circuito è presente anche un resistore allora l'energia potenziale del
+sistema diminuisce a causa delle collisioni degli elettroni liberi con gli atomi
+del resistore. Durante questo processo l'energia potenziale elettrica si
+trasforma in energia interna aumentando la vibrazione degli atomi e quindi
+causando un aumento della temperatura in quanto l'energia è trasferita all'aria
+circostante nella forma di calore.
+
+Si consideri la velocità a cui l'energia potenziale del sistema diminuisce
+quando le cariche $Q$ attraversano il resistore.
+
+$$
+\frac{dU}{dt} = \frac{d (Q \Delta V)}{dt} = \frac{dQ}{dt} \Delta V = I \Delta V
+$$
+
+Il sistema acquisisce l'energia potenziale originale che è stata trasformata in
+energia interna e dissipata a spese dell'energia potenziale chimica quando la
+carica attraversa nuovamente la batteria.
+
+Si definisce la potenza $P = I \Delta V$ la velocità con cui l'energia è
+trasferita al resistore.
+
+$$
+\Delta V = R I
+\qquad \qquad
+P = I \Delta V = I^2 R = \frac{(\Delta V)^2}{R^2} R = \frac{(\Delta V)^2}{R}
+$$
+
+Il processo per cui l'energia potenziale è trasformata in energia interna in un
+resistore si chiama **effetto joule**.
