@@ -783,9 +783,9 @@ potenziale che la batteria può fornire tra i propri terminali.
 Le leggi di Kirchhoff permettono l'analisi circuiti complessi.
 
 1. **Legge di Kirchhoff delle correnti (KCL)**: la somma algebrica delle
-   correnti che attraversano un nodo è nulla.
+   correnti che attraversano un nodo è nulla
 2. **Legge di Kirchhoff delle tensioni (KVL)**: la somma algebrica delle
-    tensioni lungo una linea chiusa è nulla.
+    tensioni lungo una linea chiusa è nulla
 
 La prima legge si basa sul principio di conservazione della carica. Qualunque
 carica che entra in un certo punto del circuito deve per forza uscire in quanto
@@ -911,3 +911,70 @@ d \vec{F} = I \, d \vec{s} \times \vec{B}
 \qquad \qquad
 \vec{F} = I \int_a^b d \vec{s} \times \vec{B}
 $$
+
+## Forza magnetica su un conduttore chiuso
+
+Si consideri un conduttore di forma arbitraria che forma un poligono chiuso
+esposta a un campo magnetico $\vec{B}$ complanare al conduttore. Si indica con
+$\vec{s}$ l'ascissa curvilinea che descrive punto per punto la direzione del
+conduttore.
+
+Per costruzione, la somma vettoriale dei singoli spostamenti infinitesimi
+$d \vec{s}$ è nulla. Di conseguenza:
+
+$$
+\vec{F} = I \left( \oint ds \right) \times \vec{B} = 0
+$$
+
+## Momento della coppia magnetica
+
+Si consideri una spira con una coppia di lati opposti ($1$ e $3$) lunga $a$ e
+una coppia di lati opposti ($2$ e $4$) lunga $b$. Tale spira è sottoposta a un
+campo magnetico $\vec{B}$ complanare alla spira, perpendicolare ai lati $2$ e
+$4$ e parallelo ai lati $1$ e $3$. La spira è percorsa da una corrente $I$.
+
+Poiché i lati $1$ e $3$ sono paralleli al campo magnetico $\vec{B}$, allora
+$\vec{L} \times \vec{B} = 0$, quindi la forza magnetica agente su tali lati è
+nulla.
+
+Tuttavia la forza magnetica agisce sui due lati $2$ e $4$ e le due forze
+$\vec{F}_2$ e $\vec{F}_4$ avranno lo stesso modulo ma verso opposto in quanto
+sui due lati la corrente scorre con verso opposto. La direzione è perpendicolare
+al piano su cui giace la spira.
+
+Si ricorda che il momento $\vec{\tau}$ di una forza $\vec{F}$ esprime
+l'attitudine di una forza applicata a una distanza $r$ da un polo di rotazione
+a imprimere una rotazione a un corpo rigido.
+
+Nel caso in esame esiste una coppia di forze $\vec{F}_2$ e $\vec{F}_4$ che
+causano la rotazione della spira intorno a un asse individuato dai punti mediani
+dei lati $1$ e $3$ posti a $b / 2$.
+
+Poiché entrambe le forze sono perpendicolari a $\vec{r}$ allora il momento sarà
+massimo. Quindi:
+
+$$
+F = I \, a \, B
+\qquad \qquad
+\tau = F_2 \frac{b}{2} + F_4 \frac{b}{2}
+     = (I a B) \frac{b}{2} + (I a B) \frac{b}{2}
+     = I a b B
+$$
+
+Si consideri un caso generico, in cui il campo magnetico è orientato in modo
+arbitrario rispetto alla spira. Si definisce il vettore superficie $\vec{A}$, con
+modulo a $a \, b$, direzione perpendicolare al piano individuato dalla spira e
+verso dettato dalla regola della mano destra.
+
+In tal caso si può definire il momento meccanico su una spira causato da un
+campo magnetico uniforme come:
+
+$$
+\vec{\tau} = I \vec{A} \times \vec{B}
+$$
+
+Il prodotto $I \vec{A}$ è definito **momento del bipolo magnetico** $\vec{\mu}$.
+Quindi $\vec{\tau} = \vec{\mu} \times \vec{B}$.
+
+Il momento è massimo quando il campo è parallelo al piano della spira. Il
+momento è nullo quando il campo è ortogonale al piano della spira.
