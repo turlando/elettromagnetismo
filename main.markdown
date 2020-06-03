@@ -1031,3 +1031,25 @@ proporzionale alla distanza dalla sorgente del campo, esattamente come avviene
 per un campo elettrico generato da una carica puntiforme. Tuttavia i due campi
 differiscono per direzione: il campo elettrico ha una direzione radiale, mentre
 il campo magnetico è perpendicolare a $d \vec{s}$ e $\hat{r}$.
+
+## Legge di Ampere
+
+Si consideri il campo magnetico generato da un cavo su cui scorre una corrente.
+Tale campo magnetico è perpendicolare al cavo e le linee di forza descrivono
+delle circonferenze concentriche intorno al cavo.
+
+Consideriamo il contributo infinitesimo $d \vec{s}$ di una linea di forza. Tale
+linea di forza è in ogni punto perpendicolare al campo $\vec{B}$. Di conseguenza
+in ogni punto $\vec{B} \cdot d \vec{s} = B \, ds$.
+
+L'integrale di linea di $\vec{B} \cdot d \vec{s}$ su qualunque superficie chiusa
+è pari a $\mu_0 I$, dove $I$ è la corrente che passa attraverso qualunque
+superficie chiusa dal percorso chiuso.
+
+$$
+\vec{B} = \frac{\mu_0 I}{2 \pi r}
+\qquad \qquad
+\oint \vec{B} \cdot d \vec{s} = B \oint ds
+                              = \frac{\mu_0 I}{2 \pi r} 2 \pi r
+                              = \mu_0 I
+$$
