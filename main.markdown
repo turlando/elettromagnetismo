@@ -998,3 +998,36 @@ $$
 \vec{F} = q \vec{E} + q \vec{v} \times \vec{B}
         = q \left( \vec{E} + v \times \vec{B} \right)
 $$
+
+## Legge di Biot-Savart
+
+La legge di Biot-Savart esprime il campo magnetico in un punto nello spazio in
+funzione della corrente che causa tale campo.
+
+La legge è basata su alcune osservazioni sperimentali sul campo magnetico
+$d \vec{B}$ in un punto $P$ associato a una frazione infinitesima $d \vec{s}$ di
+un cavo che trasporta una corrente $I$:
+
+- Il vettore $d \vec{B}$ è perpendicolare sia a $d \vec{s}$ (che è parallelo alla
+  direzione della corrente) sia al versore $\hat{r}$ rivolto da $d \vec{s}$ a $P$
+- Il modulo di $d \vec{B}$ è inversamente proprozionale a $r^2$, dove $r$ è la
+  distanza tra $d \vec{s}$ e $P$
+- Il modulo di $d \vec{B}$ è proporzionale alla corrente $I$ e a $ds$
+- Il modulo di $d \vec{B}$ è proporzionale a $\sin \theta$, dove $\theta$ è
+  l'angolo tra $d \vec{s}$ e $\hat{r}$
+
+Tali osservazioni si riassumono nella espressione matematica della legge:
+
+$$
+d \vec{B} = \frac{\mu_0}{4 \pi} \frac{I \, d \vec{s} \times \hat{r}}{r^2}
+\qquad \qquad
+\vec{B} = \frac{\mu_0 I}{4 \pi} \int \frac{d \vec{s} \times \hat{r}}{r^2}
+$$
+
+$\mu_0$ è la costante di permeabilità magnetica nel vuoto.
+
+Il modulo del campo magnetico espresso dalla legge di Biot-Savart è inversamente
+proporzionale alla distanza dalla sorgente del campo, esattamente come avviene
+per un campo elettrico generato da una carica puntiforme. Tuttavia i due campi
+differiscono per direzione: il campo elettrico ha una direzione radiale, mentre
+il campo magnetico è perpendicolare a $d \vec{s}$ e $\hat{r}$.
