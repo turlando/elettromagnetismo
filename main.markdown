@@ -978,3 +978,23 @@ Quindi $\vec{\tau} = \vec{\mu} \times \vec{B}$.
 
 Il momento è massimo quando il campo è parallelo al piano della spira. Il
 momento è nullo quando il campo è ortogonale al piano della spira.
+
+## Forza di Lorentz
+
+La forza di Lorentz è la forza che si esercita su una carica che si muove in un
+campo magnetico e in un campo elettrico.
+
+Il contributo dovuto all'interazione con il campo elettrico è direttamente
+proporzionale al valore della carica dell'oggetto e ha la stessa direzione del
+campo elettrico, mentre il contributo dovuto all'interazione con il campo
+magnetico è proporzionale sia alla carica sia alla velocità dell'oggetto ed è
+ortogonale sia alla direzione del moto sia a quella del campo magnetico.
+
+Data una carica elettrica puntiforme $q$ in moto con velocità $\vec{v}$ in una
+regione caratterizzata dalla presenza di un campo elettrico $\vec{E}$ ed un campo
+magnetico $\vec{B}$, la forza di Lorentz è espressa come:
+
+$$
+\vec{F} = q \vec{E} + q \vec{v} \times \vec{B}
+        = q \left( \vec{E} + v \times \vec{B} \right)
+$$
