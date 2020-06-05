@@ -929,6 +929,50 @@ $\mathcal{E} / R$ e si avvicina a zero per $t \to 0$.
 La quantità $RC$ è chiamata **fattore temporale**, indicato con $\tau$ e regola
 la velocità di carica del condensatore.
 
+## Scarica di un condensatore
+
+Si consideri un circuito costituito dai seguenti componenti collegati in serie:
+un condensatore totalmente carico e un resistore con resistenza $R$.
+
+Ai capi del condensatore è presente una differenza di potenziale $Q / C$ e ai
+capi del resistore è invece nulla in quanto la corrente è nulla.
+
+In un istante $t = 0$ il condensatore inizia a scaricarsi in quanto è presente
+il carico del resistore.
+
+La KVL stabilisce che:
+
+$$
+- \frac{q}{C} - iR = 0
+$$
+
+Applicando la sostituzione $i = dq \ dt$ diventa:
+
+$$
+- R \frac{dq}{dt} = \frac{q}{C}
+\qquad \qquad
+\frac{dq}{q} = - \frac{1}{RC} dt
+$$
+
+Si integra:
+
+$$
+\int_Q^q \frac{dq}{q} = - \frac{q}{RC} \int_0^t dt
+\qquad \qquad
+\ln \left( \frac{q}{Q} \right) = - \frac{t}{RC}
+$$
+
+Si ottiene:
+
+$$
+q(t) = Q e^{- \frac{t}{RC}}
+\qquad \qquad
+i(t) = - \frac{Q}{RC} e^{- \frac{t}{RC}}
+$$
+
+Il segno negativo indica che mentre il condensatore si scarica, la corrente ha
+direzione opposta rispetto a quella che aveva caricato il condensatore.
+
 # Magnetismo
 
 Un campo magnetico $\vec{B}$ può essere generato o da cariche elettriche in
