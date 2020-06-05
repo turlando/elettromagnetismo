@@ -1249,7 +1249,48 @@ $$
 
 # Legge di Faraday
 
+Una forza elettromotrice può essere indotta in un circuito da un campo magnetico
+variabile. Questo fenomeno è indicato dalla legge di Faraday.
+
 ## Legge di Lenz
+
+## Forza elettromotrice dinamica
+
+Si consideri un conduttore di lunghezza $L$ che si sposta con velocità $\vec{v}$
+in un campo magnetico uniforme $B$ diretto perpendicolarmente rispetto allo
+spostamento.
+
+Gli elettroni all'interno del conduttore si sposteranno in quanto sottoposti
+a una forza magnetica $\vec{F}_B = q \vec{v} \times \vec{B}$ diretta verso la
+lunghezza del conduttore e perpendicolare sia a $\vec{v}$ che a $\vec{B}$.
+
+A causa di questa forza gli elettroni si accumulano in un estremo del
+conduttore, lasciando le cariche positive nell'altro estremo. A causa di ciò si
+genera un campo elettrico $\vec{E}$.
+
+Le cariche continuano ad accumularsi nelle estremità del conduttore fino a
+quando la forza magnetica $qvB$ rivolta verso il basso si bilancia con la forza
+elettrica $qE$ rivolta verso l'alto.
+
+La condizione di equilibrio è:
+
+$$
+q E = q v B
+\qquad \qquad
+E = v B
+$$
+
+$$
+\Delta V = E L
+\qquad \qquad
+E L = v L B
+$$
+
+Di conseguenza si mantiene una differenza di potenziale tra i capi del
+conduttore fintantoché il conduttore continua a muoversi nel campo magnetico.
+
+Se il verso della direzione del conduttore cambia allora la polarità della
+differenza di potenziale cambierà pure.
 
 ## Campo elettrico indotto
 
