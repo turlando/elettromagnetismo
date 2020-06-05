@@ -1152,6 +1152,8 @@ $$
         = q \left( \vec{E} + v \times \vec{B} \right)
 $$
 
+# Sorgenti di campo magnetico
+
 ## Legge di Biot-Savart
 
 La legge di Biot-Savart esprime il campo magnetico in un punto nello spazio in
@@ -1210,7 +1212,7 @@ L'integrale di linea di $\vec{B} \cdot d \vec{s}$ su qualunque superficie chiusa
 superficie chiusa dal percorso chiuso.
 
 $$
-\vec{B} = \frac{\mu_0 I}{2 \pi r}
+B = \frac{\mu_0 I}{2 \pi r}
 \qquad \qquad
 \oint \vec{B} \cdot d \vec{s} = B \oint ds
                               = \frac{\mu_0 I}{2 \pi r} 2 \pi r
@@ -1221,9 +1223,31 @@ $$
 
 ## Flusso magnetico
 
+Il flusso associato a un campo magnetico si definisce in modo analogo al flusso
+elettrico:
+
+$$
+\Phi_B = \int \vec{B} \cdot d \vec{A}
+\qquad \qquad
+\Phi_B = B A \cos \theta
+$$
+
 ## Legge di Gauss
 
-## Legge di Faraday
+Poiché in natura non esiste il monopolo magnetico, le linee di forza del campo
+magnetico si comportano molto diversamente da quelle del campo elettrico. Esse
+infatti formano sempre delle linee chiuse, quindi non hanno un punto di inizio e
+un punto di terminazione.
+
+Per qualunque superficie chiusa il numero di linee di forza entranti nella
+superficie è uguale al numero di quelle uscenti. Di conseguenza il flusso del
+campo magnetico è sempre nullo.
+
+$$
+\oint \vec{B} \cdot d \vec{A} = 0
+$$
+
+# Legge di Faraday
 
 ## Legge di Lenz
 
@@ -1233,7 +1257,7 @@ $$
 
 ## Corrente di Eddy
 
-## Autoinduzione
+# Induzione
 
 ## Circuiti RL
 
