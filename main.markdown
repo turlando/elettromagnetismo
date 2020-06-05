@@ -1221,6 +1221,19 @@ $$
 
 ## Solenoide
 
+Un solenoide è un insieme di spire di uguali dimensioni poste in successione. Il
+filo avvolto che costituisce il solenoide produce un campo magnetico e se gli
+avvolgimenti della spira sono molto fitti la distribuzione di campo all’esterno
+del solenoide è simile a quella prodotta da una sbarra magnetica.
+
+(...)
+
+$$
+\oint \vec{B} \cdot d \vec{s} = B L = \mu_0 N I
+\qquad \qquad
+B = \mu_0 \frac{N}{L} I
+$$
+
 ## Flusso magnetico
 
 Il flusso associato a un campo magnetico si definisce in modo analogo al flusso
@@ -1252,13 +1265,62 @@ $$
 Una forza elettromotrice può essere indotta in un circuito da un campo magnetico
 variabile. Questo fenomeno è indicato dalla legge di Faraday.
 
+Si consideri un solenoide (avvolgimento primario) avvolto in un anello di ferro
+e collegato a una batteria. Si consideri anche un altro solenoide (avvolgimento
+secondario) avvolto nel medesimo anello di ferro e collegato a un amperometro.
+
+Nel secondo circuito non è presente nessun generatore di tensione e
+l'avvolgimento secondario è disaccoppiato elettricamente dall'avvolgimento
+primario.
+
+Nell'istante in cui il circuito è chiuso, l'amperometro rileva per un brevissimo
+tempo una corrente. Quando il circuito è riaperto, l'amperometro rileva di nuovo
+brevemente una corrente di segno opposto.
+
+Quando il circuito è chiuso la corrente nell'avvolgimento primario produce un
+campo magnetico che penetra nel secondo avvolgimento. Nello specifico la
+corrente passa da zero a una certa quantità in un periodo di tempo finito e tale
+variazione induca una corrente nel secondo avvolgimento.
+
+Si sottolinea che è la variazione di corrente nell'avvolgimento primario che
+causa una corrente nell'avvolgimento secondario e non semplicemente la presenza
+di una corrente.
+
+La legge di Faraday stabilisce che una forza elettromotrice è indotta in un
+circuito quando il campo magnetico che attraversa tale circuito cambia nel
+tempo. Tale forza elettromotrice è proporzionale alla variazione di flusso del
+campo magnetico attraverso il circuito.
+
+$$
+\mathcal{E} = - \frac{d \Phi_B}{dt}
+$$
+
+In un solenoide formato da $N$ avvolgimenti di uguale superficie la forza
+elettromotrice è indotta in ogni avvolgimento. Quindi la forza elettromotrice
+totale nel solenoide è:
+
+$$
+\mathcal{E} = - N \frac{d \Phi_B}{dt}
+\qquad \qquad
+\mathcal{E} = - \frac{d}{dt} \left( BA \cos \theta \right)
+$$
+
+Una forza elettromotrice può essere indotta nel circuito da diverse cause:
+
+- Il modulo di $\vec{B}$ varia nel tempo
+- La superficie dell'avvolgimento varia nel tempo
+- L'angolo $\theta$ tra $\vec{B}$ e $vec{A}$ varia nel tempo
+
 ## Legge di Lenz
+
+La legge di Lenz indica che nella legge di Faraday la forza elettromotrice
+indotta e la variazione del flusso magnetico hanno segno opposto.
 
 ## Forza elettromotrice dinamica
 
 Si consideri un conduttore di lunghezza $L$ che si sposta con velocità $\vec{v}$
-in un campo magnetico uniforme $B$ diretto perpendicolarmente rispetto allo
-spostamento.
+in un campo magnetico uniforme $B$ diretto perpendicolarmente rispetto al piano
+individuato dallo spostamento.
 
 Gli elettroni all'interno del conduttore si sposteranno in quanto sottoposti
 a una forza magnetica $\vec{F}_B = q \vec{v} \times \vec{B}$ diretta verso la
@@ -1294,9 +1356,79 @@ differenza di potenziale cambierà pure.
 
 ## Campo elettrico indotto
 
-## Generatore AC
+La corrente indotta da un flusso magnetico implica la presenza di un campo
+elettrico.
 
-## Corrente di Eddy
+Si è studiato che l'esistenza di un campo elettrico non dipende dalla presenza
+di una carica di prova. Analogamente un campo magnetico variabile genera un
+campo elettrico anche in assenza di un conduttore, nel vuoto.
+
+Il campo elettrico indotto non è conservativo, a differenza del campo
+elettrostatico.
+
+Si consideri una spira circolare di raggio $r$ situata in un campo magnetico
+uniforme perpendicolare al piano della spira.
+
+Se il campo magnetico cambia di modulo nel tempo allora il campo elettrico
+indotto è tangente alla spira. La direzione tangenziale è causata dalla
+direzione dello spostamento delle cariche presenti nella spira che sottoposte
+alla forza elettrica si muovono tangenzialmente.
+
+Il lavoro compiuto dal campo elettrico nello spostare di un giro completo una
+carica $q$ è pari a $q \mathcal{E}$.
+
+Poiché la forza elettrica che agisce su una carica è $q \vec{E}$, allora il
+lavoro svolto dal campo elettrico per far spostare di un giro completo una
+carica è pari a $q E 2 \pi r$.
+
+Le due espressioni del lavoro devono essere uguali, quindi:
+
+$$
+q \mathcal{E} = q E 2 \pi r
+\qquad \qquad
+E = \frac{\mathcal{E}}{2 \pi r}
+$$
+
+Considerando il flusso attraverso la spira $\Phi_B = BA = B \pi r^2$ e
+sostituendo $\mathcal{E}$ come indicato dalla legge di Faraday si ottiene:
+
+$$
+E = \frac{\mathcal{E}}{2 \pi r}
+  = - \frac{1}{2 \pi r} \frac{d \Phi_B}{dt}
+  = - \frac{r}{2} \frac{dB}{dt}
+$$
+
+La forza elettromotrice per un percorso chiuso si esprime come l'integrale di
+linea di $\vec{E} \cdot d \vec{s}$ sul percorso chiuso. Dalla legge di Faraday
+si ha che $\mathcal{E} = - d \Phi_B / dt$. Quindi
+
+$$
+\mathcal{E} = \oint \vec{E} \cdot d \vec{s}
+\qquad \qquad
+\mathcal{E} = - \frac{\Phi_B}{dt}
+\qquad \qquad
+\oint \vec{E} \cdot d \vec{s} = - \frac{d \Phi_B}{dt}
+$$
+
+Si è appena dimostrato che il campo elettrico indotto non può essere un campo
+elettrostatico in quanto l'integrale di linea della forza per lo spostamento
+non è nullo e quindi il campo non è conservativo.
+
+## Correnti parassite
+
+Delle correnti circolanti, chiamate correnti Focault o correnti parassite, sono
+indotte in pezzi di metallo che si muovono attraverso un campo magnetico.
+
+Si consideri una piastra di rame o di alluminio attaccata all'estremità di una
+asta rigida e libera di oscillare avanti e indietro attraverso un campo
+magnetico.
+
+Quando la piastra entra nel campo magnetico, la variazione di flusso induce una
+forza elettromotrice nella piastra che causa uno spostamento degli elettroni
+liberi all'interno della piastra. Ciò produce delle correnti vorticose.
+
+Secondo la legge di Lenz la direzione di queste correnti è tale da creare dei
+campi magnetici che si oppongono al campo che genera la corrente.
 
 # Induzione
 
