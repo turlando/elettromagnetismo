@@ -236,7 +236,7 @@ Se il corpo ha carica positiva l'accelerazione ha direzione e verso uguali al
 campo elettrico. Se il corpo ha carica negativa la propria accelerazione sarà
 invece opposta in direzione e verso al campo elettrico.
 
-# La legge di Gauss
+# Legge di Gauss
 
 La legge di Gauss fornisce un metodo calcolare il campo elettrostatico.
 Nonostante sia una diretta conseguenza della legge di Coulomb si rivela molto
@@ -820,6 +820,115 @@ circuito di cui si vuole misurare la tensione.
 Un circuito RC è un circuito contenente una combinazione in serie di resistori e
 condensatori.
 
+## Carica di un condensatore
+
+Si consideri un circuito costituito dai seguenti componenti collegati in serie:
+una batteria che genera una forza elettromotrice $\mathcal{E}$, un interruttore,
+un condensatore con capacità $C$, un resistore con resistenza $R$.
+
+Il condensatore è inizialmente scarico. L'interruttore è aperto e quindi nel
+circuito non scorre corrente.
+
+In un istante $t = 0$ l'interruttore è chiuso e si crea una corrente nel
+circuito. Il condensatore inizia a caricarsi.
+
+Mentre il condensatore si carica, le cariche non possono spostarsi tra le sue
+armature in quanto non sono poste a contatto diretto. Il condensatore quindi si
+comporta come un circuito aperto. La carica quindi si trasferisce non perché gli
+elettroni liberi si spostano da una armatura all'altra ma perché è presente un
+campo elettrico.
+
+Mentre il condensatore si carica, la differenza di potenziale ai capi del
+condensatore aumenta. Quando il condensatore è completamente carico, la
+corrente nel circuito è zero.
+
+La tensione ai capi del condensatore è pari a $q / C$. La differenza di
+potenziale ai capi del resistore è $iR$. L'uso di lettere minuscole per $q$ e
+$i$ indica che sono valori istantanei e che dipendono dal tempo. Si analizzi il
+circuito usando la KVL:
+
+$$
+\mathcal{E} - \frac{q}{C} - i R = 0
+$$
+
+Nell'istante $t = 0$, quando l'interruttore è chiuso, la capacità del
+condensatore è nulla. Quindi la corrente iniziale $I_0$ assume valore massimo.
+In questo istante, la differenza di potenziale fornita dalla batteria è
+interamente ai capi del resistore. Considerando $q = 0$ nella formula precedente
+si può ricavare $I_0$:
+
+$$
+\mathcal{E} - I_0 R = 0
+\qquad \qquad
+I_0 = \frac{\mathcal{E}}{R}
+$$
+
+Quando il condensatore si carica totalmente raggiungendo una carica $Q$, la
+corrente nel circuito si azzera e la differenza di potenziale fornita dalla
+batteria è interamente ai capi del condensatore. Considerando $i = 0$ nella
+prima formula si ottiene:
+
+$$
+\mathcal{E} - \frac{Q}{C} = 0
+\qquad \qquad
+Q = C \mathcal{E}
+$$
+
+Applicando la sostituzione $i = dq / dt$ si ottiene che:
+
+$$
+\mathcal{E} - \frac{q}{C} - i R = 0
+\qquad \qquad
+\mathcal{E} - \frac{q}{C} - \frac{dq}{dt} R = 0
+\qquad \qquad
+\frac{dq}{dt} = \frac{\mathcal{E}}{R} - \frac{q}{RC}
+$$
+
+Si vuole ottenere $q$ in funzione del tempo, quindi si risolve l'equazione
+differenziale come segue:
+
+$$
+\frac{dq}{dt} = \frac{\mathcal{E}}{R} - \frac{q}{RC}
+              = \frac{C \mathcal{E}}{RC} - \frac{q}{RC}
+              = - \frac{q - C \mathcal{E}}{RC}
+\qquad \qquad
+\text{Si combinano i termini a destra}
+$$
+
+$$
+\frac{dq}{q - C \mathcal{E}} = - \frac{1}{RC} dt
+\qquad \qquad
+\text{Si moltiplica per $dt$ e si divide per $q - C \mathcal{E}$}
+$$
+
+$$
+\int_0^q \frac{dq}{q - C \mathcal{E}} = - \frac{1}{RC} \int_0^t dt
+\qquad \qquad
+\ln \left( \frac{q - C \mathcal{E}}{- C \mathcal{E}} \right) = - \frac{t}{RC}
+$$
+
+Utilizzando le proprietà dei logaritmi si può riscrivere l'ultima espressione
+come:
+
+$$
+q(t) = C \mathcal{E} \left( 1 - e^{-\frac{t}{RC}} \right)
+     = Q \left( 1 - e^{-\frac{t}{RC}} \right)
+$$
+
+Considerando $i = dq/dt$ dall'ultima formula si può ottenere l'espressione della
+corrente in funzione del tempo:
+
+$$
+i(t) = \frac{\mathcal{E}}{R} e^{-\frac{t}{RC}}
+$$
+
+Si noti che per $t = 0$ la carica è nulla e per $t \to \inf$ si avvicina al
+valore massimo $C \mathcal{E}$. La corrente per $t = 0$ ha valore massimo pari a
+$\mathcal{E} / R$ e si avvicina a zero per $t \to 0$.
+
+La quantità $RC$ è chiamata **fattore temporale**, indicato con $\tau$ e regola
+la velocità di carica del condensatore.
+
 # Magnetismo
 
 Un campo magnetico $\vec{B}$ può essere generato o da cariche elettriche in
@@ -1032,6 +1141,16 @@ per un campo elettrico generato da una carica puntiforme. Tuttavia i due campi
 differiscono per direzione: il campo elettrico ha una direzione radiale, mentre
 il campo magnetico è perpendicolare a $d \vec{s}$ e $\hat{r}$.
 
+## Cavo percorso da corrente
+
+Un filo percorso da corrente crea intorno a se un campo magnetico $\vec{B}$ che
+risulta proporzionale all'intensità di corrente $I$ che scorre nel filo ed
+inversamente proporzionale alla distanza $r$ del filo.
+
+$$
+\left| \vec{B} \right| = \frac{\mu_0 I}{2 \pi r}
+$$
+
 ## Legge di Ampere
 
 Si consideri il campo magnetico generato da un cavo su cui scorre una corrente.
@@ -1053,3 +1172,29 @@ $$
                               = \frac{\mu_0 I}{2 \pi r} 2 \pi r
                               = \mu_0 I
 $$
+
+## Solenoide
+
+## Flusso magnetico
+
+## Legge di Gauss
+
+## Legge di Faraday
+
+## Legge di Lenz
+
+## Campo elettrico indotto
+
+## Generatore AC
+
+## Corrente di Eddy
+
+## Autoinduzione
+
+## Circuiti RL
+
+## Circuiti LC
+
+## Circuiti RLC
+
+## Mutua induttanza
